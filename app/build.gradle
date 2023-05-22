@@ -55,6 +55,10 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // kotPref
-    implementation 'com.chibatching.kotpref:kotpref:2.13.1'
+    def kotPrefVersion = "2.13.1"
+    implementation "com.chibatching.kotpref:kotpref:$kotPrefVersion"
+    //Room
+    def roomVersion = "2.5.1"
+    implementation("androidx.room:room-runtime:$roomVersion")
 
 }

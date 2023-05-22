@@ -2,6 +2,7 @@ package com.base.project.app
 
 import android.app.Application
 import com.base.data.kotpref.KotPref
+import com.base.data.room.RoomTestDatabase
 
 class BaseApp : Application()  {
     val TAG: String = "BaseApp"
@@ -10,6 +11,7 @@ class BaseApp : Application()  {
         super.onCreate()
         app = this
         KotPref().initialize(this)
+        RoomTestDatabase.makeDatabase(this)
     }
 
     companion object {
