@@ -6,6 +6,6 @@
 + KotPref
 + Coroutine
 + Flow
-- Room
-- Retrofit - RxJava
++ Room
+- Retrofit
 - Dagger - Hilt
