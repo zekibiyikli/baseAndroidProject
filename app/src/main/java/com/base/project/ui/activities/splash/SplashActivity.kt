@@ -13,6 +13,8 @@ class SplashActivity : BaseActivity<ActivitySplashBinding, DefaultViewModel>(
     override val getLayoutId: Int
         get() = R.layout.activity_splash
 
+    val TAG: String = "SplashActivity"
+
     override fun initView() {
 
     }
