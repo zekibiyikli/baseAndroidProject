@@ -16,7 +16,9 @@ abstract class BaseFragment<VB : ViewDataBinding, out BVM : BaseViewModel<BaseRe
 
     abstract val getLayoutId: Int
 
-    //protected open val viewModel: BVM by sharedGraphViewModel(viewModelClass)
+    protected open val viewModel: BVM by lazy {
+        viewModel
+    }
 
     open val binding: VB by lazy {
         DataBindingUtil.inflate(layoutInflater, getLayoutId, null, false)

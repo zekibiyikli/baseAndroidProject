@@ -4,8 +4,8 @@
 + OOP
 + Lifecycle
 + KotPref
++ Coroutine
++ Flow
 - Room
-- Coroutine
 - Retrofit - RxJava
 - Dagger - Hilt
-- Flow
