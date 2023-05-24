@@ -4,9 +4,11 @@ import com.base.core.base.BaseFragment
 import com.base.data.room.RoomTestDatabase
 import com.base.project.R
 import com.base.project.databinding.FragmentTestBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.FlowCollector
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class TestFragment : BaseFragment<FragmentTestBinding, TestViewModel>(
     TestViewModel::class
 ) {

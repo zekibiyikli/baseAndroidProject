@@ -1,4 +1,8 @@
 package com.base.core.base
 
-abstract class BaseRepository {
+import javax.inject.Inject
+import javax.inject.Singleton
+
+abstract class BaseRepository{
+
 }
