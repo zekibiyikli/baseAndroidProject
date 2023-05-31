@@ -3,6 +3,7 @@ package com.base.core.base
 import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.base.data.base.BaseModel
 
 abstract class BaseViewHolder<Model : BaseModel>(itemView: View) :
         RecyclerView.ViewHolder(itemView) {

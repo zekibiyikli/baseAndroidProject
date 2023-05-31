@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import com.base.core.R
+import com.base.data.base.BaseRepository
 import kotlin.reflect.KClass
 
 abstract class BaseActivity<VB : ViewDataBinding, BVM : BaseViewModel<BaseRepository>>(

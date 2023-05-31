@@ -1,6 +1,6 @@
 package com.base.core.defaults
 
-import com.base.core.base.BaseRepository
+import com.base.data.base.BaseRepository
 
 class DefaultRepo(
 ): BaseRepository()

@@ -6,6 +6,7 @@ import android.widget.Filter
 import android.widget.Filterable
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
+import com.base.data.base.BaseModel
 import kotlin.reflect.KClass
 
 abstract class BaseAdapter<Model : BaseModel, VB : ViewDataBinding, VH : BaseViewHolder<Model>>(

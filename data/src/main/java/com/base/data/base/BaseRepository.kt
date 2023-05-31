@@ -1,4 +1,4 @@
-package com.base.core.base
+package com.base.data.base
 
 import javax.inject.Inject
 import javax.inject.Singleton

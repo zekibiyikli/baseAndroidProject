@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import androidx.viewbinding.ViewBinding
+import com.base.data.base.BaseRepository
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.*
 import kotlin.reflect.KClass

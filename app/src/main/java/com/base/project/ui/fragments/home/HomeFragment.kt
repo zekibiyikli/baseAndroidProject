@@ -1,28 +1,24 @@
-package com.base.project.ui.fragments.testfragment
+package com.base.project.ui.fragments.home
 
 import com.base.core.base.BaseFragment
-import com.base.data.room.RoomTestDatabase
 import com.base.project.R
-import com.base.project.databinding.FragmentTestBinding
+import com.base.project.databinding.FragmentHomeBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.FlowCollector
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class TestFragment : BaseFragment<FragmentTestBinding, TestViewModel>(
-    TestViewModel::class.java
+class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(
+    HomeViewModel::class.java
 ) {
 
     override val getLayoutId: Int
-        get() = R.layout.fragment_test
+        get() = R.layout.fragment_home
 
-    private val flowCollecter= FlowCollector<String> {
-
-    }
     private val randomImageCollecter= FlowCollector<String> {
 
     }
+
 
     override fun initView() {
         viewModel.getRandomImage()
@@ -30,24 +26,15 @@ class TestFragment : BaseFragment<FragmentTestBinding, TestViewModel>(
 
     override fun initListeners() {
         super.initListeners()
+        with(binding){
+
+        }
     }
 
     override fun initObservers() {
         super.initObservers()
         with(viewModel){
             launch { randomImage.collect(randomImageCollecter) }
-            launch { stateFlow.collect(flowCollecter) }
         }
-    }
-
-    private fun exampleRoom(){
-        val dao= RoomTestDatabase.instance?.roomTestDAO()
-        dao?.let {
-
-        }
-    }
-
-    companion object {
-
     }
 }

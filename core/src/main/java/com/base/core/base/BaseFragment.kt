@@ -8,16 +8,18 @@ import androidx.annotation.CallSuper
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.base.data.base.BaseRepository
 import kotlin.reflect.KClass
 
 abstract class BaseFragment<VB : ViewDataBinding, out BVM : BaseViewModel<BaseRepository>>(
-    viewModelClass: KClass<BVM>
+    viewModelClass: Class<BVM>
 ) : Fragment() {
 
     abstract val getLayoutId: Int
 
-    protected open val viewModel: BVM by lazy {
-        viewModel
+    protected open val viewModel: BVM by lazy{
+        ViewModelProvider(requireActivity()).get(viewModelClass)
     }
 
     open val binding: VB by lazy {

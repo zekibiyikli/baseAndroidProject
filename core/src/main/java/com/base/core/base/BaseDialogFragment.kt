@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.DialogFragment
+import com.base.data.base.BaseRepository
 import kotlin.reflect.KClass
 
 open class BaseDialogFragment <VB : ViewDataBinding, BVM : BaseViewModel<BaseRepository>>(

@@ -1,6 +1,7 @@
 package com.base.data.models
 
-import com.base.core.base.BaseModel
+import com.base.data.base.BaseModel
+
 
 data class TestModel(
     var text:String="",
